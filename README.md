@@ -23,3 +23,12 @@ inefficient.
 
 What is the big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+### Sources
+I used this link to help me visualize what the Dijkstra's Algorithm does: https://www.w3schools.com/dsa/dsa_algo_graphs_dijkstra.php 
+
+My main source was the lecture video by Lars Kothoff about Dijkstra's Algorithm: https://www.youtube.com/watch?v=90QjDpLkf0I 
+
+I used this link to learn about the Infinity keyword in JavaScript: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity 
+
+“I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.” - Natalie Sleight
