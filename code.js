@@ -28,11 +28,17 @@ function dijkstra(graph, sourceNode) {
                 }
             }
         }
+        if (smallestValue == Infinity) {
+            for (var i = 0; i < verNum; i++) {
+                if (distArr[i][0] == Infinity) {
+                    distArr[i][1] = true;
+                }
+            } 
+        }
         if (hasFalse == false) {break;}
         
         // set distance-true
         distArr[svIndex][1] = true;
-
 
         // look at all outgoing vertices/edges
         for (var i = 0; i < verNum; i++) {
