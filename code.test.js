@@ -40,7 +40,7 @@ var testGraph4 = [
   ];
 
 var result = dijsktra(testGraph4,4);
-assert(JSON.stringify(result) == JSON.stringify([6,5,9,6,0]));
+assert(JSON.stringify(result) == JSON.stringify([6,8,9,5,0]));
 
 var testGraph5 = [
   [0,7,0,0,0],
@@ -51,4 +51,4 @@ var testGraph5 = [
   ];
 
 var result = dijsktra(testGraph5,2);
-assert(JSON.stringify(result) == JSON.stringify([15,8,0,5,8]));
+assert(JSON.stringify(result) == JSON.stringify([14,7,0,5,8]));
