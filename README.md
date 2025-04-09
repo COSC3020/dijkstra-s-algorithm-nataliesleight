@@ -30,11 +30,11 @@ To create the array that will hold all of the distance values takes V time becau
 
 Next, the while loop will run up to V times as a separate value is turned true in each iteration until there are no more false values left.
 
-Within this while loop is a for loop that loops from 0 to the number of vertices, V times. Past this for loop is another one that also runs V times. 
+Within this while loop is a for loop that loops from 0 to the number of vertices, V times. There are two for loops also within the while loop that also runs V times. 
 
 Finally outside of the while loop near the end of the function, a new array is created to only hold the distance values which also runs V times.
 
-Thus the runtime equation is $O(|V| + |V| * (|V| + |V|) + |V|) = O(|V|^2)$.
+Thus the runtime equation is $O(|V| + |V| * (|V| + |V| + |V|) + |V|) = O(|V|^2)$.
 
 ### Sources
 I used this link to help me visualize what the Dijkstra's Algorithm does: https://www.w3schools.com/dsa/dsa_algo_graphs_dijkstra.php 
