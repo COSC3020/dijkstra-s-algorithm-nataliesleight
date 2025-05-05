@@ -23,3 +23,28 @@ inefficient.
 
 What is the big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+My runtime complexity is very similar to that of the one shown in the slides. I used an adjacency matrix as my graph. The complexity is $\Theta(|V|^2)$.
+
+To create the array that will hold all of the distance values takes V time because it loops from 0 to the number of vertices (where V is the number of vertices in the graph). 
+
+Next, the while loop will run up to V times as a separate value is turned true in each iteration until there are no more false values left.
+
+Within this while loop is a for loop that loops from 0 to the number of vertices, V times. There are two for loops also within the while loop that also runs V times. 
+
+Finally outside of the while loop near the end of the function, a new array is created to only hold the distance values which also runs V times.
+
+Thus the runtime equation is $O(|V| + |V| * (|V| + |V| + |V|) + |V|) = O(|V|^2)$.
+
+### Sources
+I used this link to help me visualize what the Dijkstra's Algorithm does: https://www.w3schools.com/dsa/dsa_algo_graphs_dijkstra.php 
+
+My main source was the lecture video by Lars Kothoff about Dijkstra's Algorithm: https://www.youtube.com/watch?v=90QjDpLkf0I 
+
+I used this link to learn about the Infinity keyword in JavaScript: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity 
+
+For the test code I received some help from Noah Vogt and used ChatGPT to generate graphs to use for testing, as well as looking at the test code from previous assignments. The prompts I used to generate the graphs were "I am using Dijkstra's Algorithm to find the shortest paths in a graph in JavaScript. Give me 5 graphs as adjacency matrices that would be good to test my code. Have one be 3 by 3, two be 4 by 4, and one be 5 by 5. Also give a source node for each graph and an array that holds the shortest path to each node that Dijkstra's Algorithm would give" and "Please keep these same graphs but use a random node as the source node. Still return the distance arrays"
+
+I created some of the graphs on my own. 
+
+“I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.” - Natalie Sleight
